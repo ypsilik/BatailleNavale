@@ -5,13 +5,18 @@ package ApplicationBatailleNavale;
  */
 public class PartieBatailleNavale
 {
-	private Tableau tableauDuJoueur1;
-	private Tableau tableauDuJoueur2;
+	private Tableau tableauBateauxDuJoueur1;
+	private Tableau tableauBateauxDuJoueur2;
+	private Tableau tableauAttaqueJ1;
+	private Tableau tableauAttaqueJ2;
 	
 	public PartieBatailleNavale(Tableau tableauJ1, Tableau tableauJ2)
 	{
-		this.tableauDuJoueur1 = tableauJ1;
-		this.tableauDuJoueur2 = tableauJ2;
+		this.tableauBateauxDuJoueur1 = tableauJ1;
+		this.tableauBateauxDuJoueur2 = tableauJ2;
+		this.tableauAttaqueJ1 = new Tableau;
+		this.tableauAttaqueJ2 = new Tableau;
+		
 	}
 /*
  * déroulement de la partie*
