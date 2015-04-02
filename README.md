@@ -1,2 +1,2 @@
-# test
-test de la séance
+# BatailleNavale
+Dossier pour le projet en TP Java
