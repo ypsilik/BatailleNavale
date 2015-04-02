@@ -1,21 +1,19 @@
 package ApplicationBatailleNavale;
 
 /**
- * Classe "PartieBatailleNavale" principale de l'application
- * classe définissant les caractéristiques principales de la partie. 
+ * Classe représentant une partie de bataille navale
  */
-
 public class PartieBatailleNavale
 {
-/* faire le constructeur
- *
- * 
- */
+	private Tableau tableauDuJoueur1;
+	private Tableau tableauDuJoueur2;
 	
-/* faire la méthode jouer -->*/
-	public void JouerUnePartie()
+	public PartieBatailleNavale(Tableau tableauJ1, Tableau tableauJ2)
 	{
-/**
+		this.tableauDuJoueur1 = tableauJ1;
+		this.tableauDuJoueur2 = tableauJ2;
+	}
+/*
  * déroulement de la partie*
  * 
  * initialiser les tableaux (x4)
@@ -29,7 +27,14 @@ public class PartieBatailleNavale
  * Définir les types de bateau
  * 		bateau 1 case(x1); 2 cases(x2); 3 cases(x2); 4 cases (x1)
  * 
- **/
+ */
 	
+
+	/**
+	 * Jouer la partie
+	 */
+	public void jouer() {
+		// TODO Auto-generated method stub
+		
 	}
 }
