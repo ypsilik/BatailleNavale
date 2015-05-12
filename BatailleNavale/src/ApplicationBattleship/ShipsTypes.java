@@ -4,7 +4,7 @@ package ApplicationBattleship;
  * @author CAYRE Laure and LAURENT Maud
  *
  */
-public enum ShipType {
+public enum ShipsTypes {
 	
 	/**
 	 * ship type use 5 cases
