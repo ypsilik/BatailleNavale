@@ -8,20 +8,22 @@ package ApplicationBattleship;
 public class Ship {
 	private boolean isTouch;
 	private boolean isPlouf;
+	private int shipSize;
+	private ShipsTypes shipType;
+	private Position shipPosi;
 	
-	public Ship()
+	public Ship(ShipsTypes shiptypes, int size)
 	{
+		this.shipType = shiptypes;
+		this.shipSize = size;
 		this.isTouch=false;
 		this.isPlouf=false;
 	}
 	
-	public void ShipTouch()
+	public boolean ShipTouch(Position posi)
 	{
-		this.isTouch=true;
+		if (posi == shipPosi) return true;
+		else return false;
 	}
 	
-	public void ShipPlouf()
-	{
-		this.isPlouf=true;
-	}
 }

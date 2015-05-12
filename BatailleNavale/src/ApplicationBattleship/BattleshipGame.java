@@ -30,7 +30,9 @@ public class BattleshipGame
 	public BattleshipGame(Grid gridP1, Grid gridP2)
 	{
 		this.gridShipP1 = gridP1;
+		gridP1.DisplayGrid();
 		this.gridShipP2 = gridP2;
+		gridP2.DisplayGrid();
 		this.gridAssaultP1 = new Grid();
 		this.gridAssaultP2 = new Grid();
 		

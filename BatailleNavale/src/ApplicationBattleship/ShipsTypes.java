@@ -4,7 +4,7 @@ package ApplicationBattleship;
  * @author CAYRE Laure and LAURENT Maud
  *
  */
-public enum ShipType {
+public enum ShipsTypes {
 	
 	/**
 	 * ship type use 5 cases
@@ -17,9 +17,18 @@ public enum ShipType {
 	/**
 	 * ship type use 3 cases
 	 */
-	SUBMARINE,
+	SUBMARINEn1,
+	SUBMARINEn2,
 	/**
 	 * ship type use 2 cases
 	 */
 	TORPEDO;
+	
+	public String toString(){
+		if (this == AIRCRAFT_CARRIER) return "5";
+		if (this == CRUISER) return "4";
+		if (this == SUBMARINEn1) return "3a";
+		if (this == SUBMARINEn2) return "3b";
+		else return "2";
+	}
 }
