@@ -23,4 +23,3 @@ public enum ShipType {
 	 */
 	TORPEDO;
 }
-  // TODO associer cas a chaque bateau possible avec enum ?
