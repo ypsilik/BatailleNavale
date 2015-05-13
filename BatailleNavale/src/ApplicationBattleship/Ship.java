@@ -5,6 +5,7 @@ package ApplicationBattleship;
  * @author CAYRE Laure and LAURENT Maud
  *
  */
+
 public abstract class Ship 
 {
 	private boolean isTouch;
@@ -30,5 +31,4 @@ public abstract class Ship
 	{
 		this.isPlouf=true;
 	}
-	
 }

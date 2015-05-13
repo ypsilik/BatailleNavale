@@ -1,6 +1,5 @@
 package ApplicationBattleship;
 
-import BatailleNavaleVersionCours.Ship;
 
 /**
  * Class to create grid for battleship
@@ -8,7 +7,6 @@ import BatailleNavaleVersionCours.Ship;
  *
  */
 public class Grid {
-	
 	/**
 	  private attribute with ship type
 	 **/
@@ -18,29 +16,26 @@ public class Grid {
 	 *  initialisation NB_lines
 	 */
 	private final static int NB_Lines=11;
-	
+
 	/**
 	 * initialisation NB_column 
 	 */
 	private final static int NB_Column=11;
-	 
+
 	private char[][] grid;
 	
 	public Grid() {
-		this.grid = new char[NB_Lines][NB_Column];
-		
+		this.grid = new char[NB_Lines][NB_Column];		
 		for (int i=0; i<NB_Lines ; i++)
 		{
 			for (int j=0; j< NB_Column; j++)
 			{
 				grid[i][j]='~';
 			}
-		}
-			
+		}	
 	}
 	
 	public void DisplayGrid()
-	/*public String toString()*/
 	{
 		
 		{

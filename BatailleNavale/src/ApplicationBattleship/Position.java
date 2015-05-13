@@ -1,7 +1,6 @@
 package ApplicationBattleship;
 
 public class Position {
-
 	private int x;
 	private int y;
 	
@@ -9,5 +8,4 @@ public class Position {
 	{
 		
 	}
-	
 }

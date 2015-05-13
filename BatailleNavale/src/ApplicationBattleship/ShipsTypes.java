@@ -17,10 +17,19 @@ public enum ShipsTypes {
 	/**
 	 * ship type use 3 cases
 	 */
-	SUBMARINE,
+	SUBMARINEn1,
+	SUBMARINEn2,
 	/**
 	 * ship type use 2 cases
 	 */
 	TORPEDO;
+
+	public String toString(){
+		if (this == AIRCRAFT_CARRIER) return "5";
+		if (this == CRUISER) return "4";
+		if (this == SUBMARINEn1) return "3a";
+		if (this == SUBMARINEn2) return "3b";
+		else return "2";
+	}
 }
-  // TODO associer cas a chaque bateau possible avec enum ?
+
