@@ -29,12 +29,13 @@ public class Grid {
 			
 	}
 		
-	/** pour pouvoir afficher la belle grille que je me suis fait chier a faire en 8h!!!!**/
+	/**
+	 * Display grid
+	 */
 	public void DisplayGrid()
-	/*public String toString()*/
 	{
-		Position blabla=obtenirPosition();
-		modifPosition(blabla);
+		
+		
 			System.out.format("      ");
 			for(int i=1; i<=NB_Lignes;i++ )
 			   {
@@ -46,8 +47,8 @@ public class Grid {
 			   for(int i=0 ;i<NB_Lignes;i++) 
 			   {
 				   char code='A';
-				   int increm=code+n;
-				   System.out.format("%4s |",(char)increm);
+				   int incremente=code+n;
+				   System.out.format("%4s |",(char)incremente);
 				   n++;
 				   for(int j=0;j<NB_Colonne;j++) 
 				   {
@@ -71,9 +72,9 @@ public class Grid {
 	}
 	
 	//mÃ©thode qui modifie la case Ã  la position donnÃ©e//
-	public void modifPosition(Position unePosition)
+	public void modifPosition(Position unePosition, char caracter)
 	{
-		this.grid[unePosition.getX()][unePosition.getY()]=(char)127;
+		this.grid[unePosition.getX()][unePosition.getY()]=caracter;
 	}
 }
 

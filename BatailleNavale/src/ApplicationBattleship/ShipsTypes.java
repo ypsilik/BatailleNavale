@@ -1,6 +1,6 @@
 package ApplicationBattleship;
 
-import javax.swing.Spring;
+//import javax.swing.Spring;
 /**
  * enumeration of ships types
  * @author CAYRE Laure and LAURENT Maud
@@ -29,8 +29,8 @@ public enum ShipsTypes {
 		public String toString(){
 			if (this == AIRCRAFT_CARRIER) return "5";
 			if (this == CRUISER) return "4";
-			if (this == SUBMARINEn1) return "3a";
-			if (this == SUBMARINEn2) return "3b";
+			if (this == SUBMARINEn1) return "$";
+			if (this == SUBMARINEn2) return "S";
 			else return "2";
 		}
 	}

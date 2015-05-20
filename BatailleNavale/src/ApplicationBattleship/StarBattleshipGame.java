@@ -1,4 +1,4 @@
-1package ApplicationBattleship;
+package ApplicationBattleship;
 import java.util.*;
 /**
  * Application to start Battleship (main)
@@ -26,8 +26,8 @@ public class StarBattleshipGame
 			}
 		}
 	}
-		/*Grid gridP1 = new Grid();
-		Grid gridP2 = new Grid();
+	//	Grid gridP1 = new Grid();
+	/*	Grid gridP2 = new Grid();
 		new BattleshipGame(gridP1, gridP2).play();*/
 		
 		/*System.out.println("Vous allez commencer une partie de Bataille Navale");
