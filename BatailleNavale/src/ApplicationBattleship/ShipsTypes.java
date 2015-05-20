@@ -1,6 +1,5 @@
 package ApplicationBattleship;
 
-//import javax.swing.Spring;
 /**
  * enumeration of ships types
  * @author CAYRE Laure and LAURENT Maud

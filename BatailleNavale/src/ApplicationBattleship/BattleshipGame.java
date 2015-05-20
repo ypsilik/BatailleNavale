@@ -40,7 +40,11 @@ public class BattleshipGame
 		this.gridAssaultP2 = new Grid();
 		
 	}	
-
+/**
+ * place all ship on the grid an exception when the user don't type a good value 
+ * @param message
+ * @throws BadValue
+ */
 	public static void Placeship(String message) throws BadValue
 	{
 		int porteAvion=1;
@@ -117,11 +121,6 @@ public class BattleshipGame
 				}
 				if (str>5)
 					throw new BadValue(message);
-				/*System.out.println("vous pouvez commercer à jouer maintenant");
-				gridAssaultP1.DisplayGrid();
-				Position positionAssault= gridAssaultP1.getPosition();
-				gridAssaultP1.changePosition(positionAssault,'X');
-				//Position positionshoot=Obtenir_posiship(positionAssault);*/
 	}
 	/**
 	 * Play the game

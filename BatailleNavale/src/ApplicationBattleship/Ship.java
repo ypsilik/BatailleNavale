@@ -19,7 +19,6 @@ public class Ship
 		this.ShipsType = ShipType;
 	}
 	
-	//----------------------------------------------------------------------------//
 	/**
      * Renvoie le nom du bateau.
      * @return nom du bateau.
@@ -37,7 +36,7 @@ public class Ship
     {
         return this.orientationHorizontale;
     }
-//-----------------------------------------------------------------------------------//   
+ 
 	/**
 	 * To get ship position
 	 * @param posiship

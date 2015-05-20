@@ -10,9 +10,10 @@ public class StarBattleshipGame
 	/**
 	 * Main for Battleship game
 	 * @param args args
+	 * an exception in relation with BattleshipGame method Placeship()
 	 */
 	public static void main(String[] args) throws BadValue 
-	{
+	{		
 		while (true)
 		{
 			try 
@@ -26,6 +27,7 @@ public class StarBattleshipGame
 			}
 		}
 	}
+	//----------------------------------------------------------------------------------//
 	//	Grid gridP1 = new Grid();
 	/*	Grid gridP2 = new Grid();
 		new BattleshipGame(gridP1, gridP2).play();*/
@@ -49,4 +51,5 @@ public class StarBattleshipGame
 		System.out.println("Placez les bateaux de 3 cases, les sous-marins: ");
 		
 		System.out.println(" ");*/
+	//----------------------------------------------------------------------------------//
 }
