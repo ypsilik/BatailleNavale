@@ -16,6 +16,9 @@ public class Grid {
 	 
 	private char[][] grid;
 	
+	/**
+	 * constructor of grid
+	 */
 	public Grid() {
 		this.grid = new char[NB_Lignes][NB_Colonne];
 		
@@ -58,8 +61,10 @@ public class Grid {
 				}
 	}
 	
-	//demande Ã  l'utilisateur les coordonnÃ©es des points//
-	public Position obtenirPosition()
+	/**
+	 *get position from user
+	 **/
+	public Position getPosition()
 	{
 		Position position;
 		Scanner sc = new Scanner(System.in);
@@ -71,8 +76,12 @@ public class Grid {
 		return position;
 	}
 	
-	//mÃ©thode qui modifie la case Ã  la position donnÃ©e//
-	public void modifPosition(Position unePosition, char caracter)
+	/**
+	 * change the position ship when x and Y are entry
+	 * @param unePosition
+	 * @param caracter
+	 */
+	public void changePosition(Position unePosition, char caracter)
 	{
 		this.grid[unePosition.getX()][unePosition.getY()]=caracter;
 	}

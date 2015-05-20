@@ -17,7 +17,7 @@ public class StarBattleshipGame
 		{
 			try 
 			{
-				BattleshipGame.play("vous n'avez pas mis un bon chiffre");	
+				BattleshipGame.play("\n Vous n'avez pas rentré une valeur valide \n");	
 			}
 			catch (BadValue e)
 			{
