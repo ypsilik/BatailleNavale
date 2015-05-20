@@ -1,14 +1,7 @@
 package ApplicationBattleship;
 
-/**
- * Class to create type ships
- * @author CAYRE Laure and LAURENT Maud
- *
- */
-
 public class Ship 
 {
-	private static final ShipsTypes TORPEDO = null;
 	/*private final String IS_TOUCH="X";
 	private final String IS_NOT_TOUCH="O";*/
 	private int size;
@@ -17,11 +10,34 @@ public class Ship
 	
 	int cptTorpedo, cptSubmarineN1, cptSubmarineN2, cptCruiser, cptAircraft = 0;	
 	
+	private String nom;
+	//renvoie l'orientation du bateau, vrai si horizontale, faux si verticale//
+	private boolean orientationHorizontale; 
 	public Ship(ShipsTypes ShipType, int shipSize)
 	{
 		this.size = shipSize;
 		this.ShipsType = ShipType;
 	}
+	
+	//----------------------------------------------------------------------------//
+	/**
+     * Renvoie le nom du bateau.
+     * @return nom du bateau.
+     */
+    public String getNom()
+    {
+        return this.nom;
+    }
+    
+    /**
+     * Renvoi l'orientation du bateau : vrai si horizontale, sinon verticale.
+     * @return l'orientation du bateau.
+     */
+    public boolean getOrientation()
+    {
+        return this.orientationHorizontale;
+    }
+//-----------------------------------------------------------------------------------//   
 	
 	public Position Obtenir_posiship(Position posiship)
 	{
@@ -38,10 +54,9 @@ public class Ship
 	public ShipsTypes GetShip(Position position)
 	{
 		if (position == this.posiShip) return ShipsType;
-		else return null;
-		
+		else return null;			
 	}
-	
+		
 	public boolean ShipTouch(Position posiShoot)
 	{
 		if (Obtenir_posiship(posiShip) == Obtenir_posishoot(posiShoot))
@@ -65,6 +80,6 @@ public class Ship
 		if(cptCruiser==4) return true;
 		if(cptAircraft==5) return  true;
 		else return false;
-	}
-	
+	}	
 }
+
